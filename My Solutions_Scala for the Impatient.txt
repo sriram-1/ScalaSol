@@ -1,0 +1,54 @@
+
+Chapter 1:
+
+6.
+
+scala> math.BigInt(2).pow(1024)
+res6: scala.math.BigInt = 1797693134862315907729305190789024733617976978942306572734300811577326758055009631327084773224
+075360211201138798713933576587897688144166224928474306394741243777678934248654852763022196012460941194530829520850057688
+38150682342462881473913110540827237163350510684586298239947245938479716304835356329624224137216
+
+
+9.
+
+scala> "Hello"(0)
+res7: Char = H
+
+scala> "Hello".takeRight(1)
+res14: String = o
+
+scala> "Hello"(("Hello".length)-1)
+res21: Char = o
+
+10.
+
+def take(n: Int): String
+Selects first n elements.
+n the number of elements to take from this sequence.
+returns a sequence consisting only of the first n elements of this sequence, or else the whole sequence, if it has less than n elements.
+
+
+Notes:
+1. Explain difference between var and val.
+2. Explain difference between "" and ''
+
+def takeRight(n: Int): String
+Selects last n elements.
+n the number of elements to take
+returns a sequence consisting only of the last n elements of this sequence, or else the whole sequence, if it has less than n elements.
+
+def drop(n: Int): String
+Selects all elements except first n ones.
+n the number of elements to drop from this sequence.
+returns a sequence consisting of all elements of this sequence except the first n ones, or else the empty sequence, if this sequence has less than n elements.
+
+def dropRight(n: Int): String
+Selects all elements except last n ones.
+n The number of elements to take
+returns a sequence consisting of all elements of this sequence except the last n ones, or else the empty sequence, if this sequence has less than n elements.
+
+
+
+
+
+
